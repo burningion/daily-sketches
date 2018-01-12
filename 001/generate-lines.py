@@ -18,7 +18,7 @@ b = a.load()
 input = Image.open('make.png')
 bin = input.load()
 
-vector_scale = 0.015
+vector_scale = 0.05
 timer = 0
 
 initial = []
@@ -65,7 +65,6 @@ input = Image.open('art.png')
 bin = input.load()
 
 colors = [(232, 63, 11)]
-vector_scale = 0.015
 timer = 0
 
 initial = []
@@ -105,7 +104,7 @@ input = Image.open('with.png')
 bin = input.load()
 
 colors = [(34, 116, 165)]
-vector_scale = 0.015
+
 timer = 0
 
 initial = []
@@ -145,7 +144,7 @@ input = Image.open('python.png')
 bin = input.load()
 
 colors = [(220, 220, 221)]
-vector_scale = 0.03
+
 timer = 0
 
 initial = []
