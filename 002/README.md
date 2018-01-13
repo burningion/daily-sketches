@@ -2,6 +2,10 @@
 
 sketch using matterport's [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project. you'll need to have it installed and run this project in that directory.
 
+this mixes two videos, detecting skateboards and people
+
+![002](https://github.com/burningion/daily-sketches/raw/master/002/images/00089.jpg)
+
 space video from [creative commons](https://pixabay.com/en/videos/space-universe-cosmos-background-7980/)
 
 ## sketch video generated with folowing commands
