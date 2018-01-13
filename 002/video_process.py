@@ -96,13 +96,17 @@ for i in range(1, 530):
     masked_image = imageio.imread(spacename)
     results = model.detect([frame], verbose=0)
     r = results[0]
-    
+    masky = np.zeros((720, 1280), dtype='uint8')
     if r['rois'].shape[0] >= 1:
-        for i in range(r['rois'].shape[0]):
-            if r['class_ids'][i] == class_names.index('skateboard') or r['class_ids'][i] == class_names.index('person'):
+        for b in range(r['rois'].shape[0]):
+            if r['class_ids'][b] == class_names.index('skateboard') or r['class_ids'][b] == class_names.index('person'):
+                new_mask = masked_image.copy()
                 print('board detected')
-                mask = r['masks'][:,:,i]
-                frame = cv2.bitwise_and(frame, frame, mask=255 - mask)
-                masked_image = cv2.bitwise_and(masked_image, masked_image, mask=mask)
-                frame += masked_image
-    imageio.imwrite('imageseqout/%05d.jpg' % i, frame)
+                mask = r['masks'][:,:,b]
+                masky += mask
+        masky = cv2.blur(masky, (5,5), 0)
+        new_mask = cv2.bitwise_and(new_mask, new_mask, mask=masky * 255)
+        frame += new_mask
+    fileout = 'imageseqout/%05d.jpg' % i
+    print(fileout)
+    imageio.imwrite(fileout, frame)
