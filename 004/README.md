@@ -1,8 +1,10 @@
 # day 004
 
-sketch using openpose. I used the docker version of the code and generated a pose series of data.
+sketch using [openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). I used the [docker version](https://github.com/CMU-Perceptual-Computing-Lab/openpose/pull/12) of the code and generated a pose series of data.
 
 ![004](https://github.com/burningion/daily-sketches/raw/master/004/images/00139.jpg)
+
+generate the pose data from the video using the following docker script in the same directory as your chosen `run.sh` from the branch.
 
 ```bash
 #!/bin/sh
