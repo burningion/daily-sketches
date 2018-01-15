@@ -27,6 +27,8 @@ xhost -local:root
 
 ![004](https://github.com/burningion/daily-sketches/raw/master/004/images/00408.jpg)
 
+the pose data is being read wrong, and that's why the line comes from off the screen sometimes. I'll fix that later.
+
 ## sketch video generated with folowing commands
 
 ```bash
