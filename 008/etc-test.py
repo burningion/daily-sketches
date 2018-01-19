@@ -5,6 +5,8 @@ import pygame.gfxdraw
 import importlib
 import argparse
 
+from rtmidi.midiutil import open_midiinput
+
 import os
 
 parser = argparse.ArgumentParser(description="Critter and Guitari ETC program debug environment")
@@ -28,32 +30,20 @@ class MidiInputHandler(object):
         self.port = port
         self.base_freq = freq
         self._wallclock = time.time()
-        self.knob_vals = [random.random() for i in range(7)]
+        self.knob_vals = [random.random() for i in range(8)]
 
     def __call__(self, event, data=None):
         global currentFrequency
         message, deltatime = event
         self._wallclock += deltatime
         print("[%s] @%0.6f %r" % (self.port, self._wallclock, message))
-        if message[1] == 16:
-            self.freq_vals[0] = (message[2] - 62) * .5
-        elif message[1] == 17:
-            self.freq_vals[1] = (message[2] - 62) * .01
-        elif message[1] == 18:
-            self.freq_vals[2] = (message[2] - 62) * .005
-        elif message[1] == 19:
-            self.freq_vals[3] = (message[2] - 62) * .0001 
-        elif message[1] == 20:
-            self.freq_vals[4] = (message[2] - 62) * .00001
-        new_freq = self.base_freq
-        for i in range(6):
-            new_freq += self.freq_vals[i]
-        currentFrequency = new_freq
-        print(new_freq)
+        if message[1] >= 16 and message[1] <= 23:
+            self.knob_vals[message[1] - 16] = message[2] / 127.0
+
 
 if args.midi:
     try:
-        midiin, port_name = open_midiinput(port)
+        midiin, port_name = open_midiinput(args.midi)
     except (EOFError, KeyboardInterrupt):
         exit()
     midiSettings = MidiInputHandler(port_name, 940.0)
@@ -72,15 +62,21 @@ class ETC(object):
         self.knob2 = random.random()
         self.knob3 = random.random()
         self.knob4 = random.random()
+        self.knob5 = random.random()
+        self.knob6 = random.random()
+        self.knob7 = random.random()
+        self.knob8 = random.random()
+
+        self.midi_input = False
 
         self.audio_in = [random.randint(-32768, 32767) for i in range(100)]
         self.bg_color = (0, 0, 0)
         self.audio_trig = False
-        self.random_color = THECOLORS[random.choice(THECOLORS.keys())]
+        self.random_color = THECOLORS[random.choice(list(THECOLORS.keys()))]
         self.midi_note_new = False
 
     def color_picker(self):
-        self.random_color = THECOLORS[random.choice(THECOLORS.keys())]
+        self.random_color = THECOLORS[random.choice(list(THECOLORS.keys()))]
         return self.random_color
 
 etc = ETC()
@@ -102,6 +98,9 @@ if recording:
 
 while running:
     screen.fill(THECOLORS['black'])
+    if args.midi:
+        for j, val in enumerate(midiSettings.knob_vals):
+            setattr(etc, 'knob%i' % (j + 1), val)
     i.draw(screen, etc)
 
     key = pygame.key.get_pressed()
