@@ -2,7 +2,7 @@
 
 zooming squares controlled with midi input, now with inner squares
 
-![009](https://github.com/burningion/daily-sketches/raw/master/009/images/00275.jpg)
+![009](https://github.com/burningion/daily-sketches/raw/master/009/images/00571.jpg)
 
 ## sketch video generated from following commands
 
