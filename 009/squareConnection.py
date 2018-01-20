@@ -34,6 +34,7 @@ class Square(object):
             x1 = slope * initial[i + 1][0] + (1 - slope) * initial[i][0]
             y1 = slope * initial[i + 1][1] + (1 - slope) * initial[i][1]
             result.append([x1, y1])
+        # add the last connection, final element to first element
         length = math.sqrt((initial[0][0] - initial[3][0]) ** 2 + (initial[0][1] - initial[3][1]) ** 2)
         slope = distance / length
         x1 = slope * initial[0][0] + (1 - slope) * initial[3][0]
@@ -68,5 +69,6 @@ def draw(screen, etc):
         pygame.draw.lines(screen, (255, 255, 255), True,
                             square.as_lines())
         pygame.draw.lines(screen, (255, 255, 255), True,
-                          square.inner_square(getattr(etc, "knob%i" % (j + 8)) * square.length // 2))
+                          square.inner_square(getattr(etc, "knob%i" % (j + 9))
+                                              * square.length * square.scale))
     
