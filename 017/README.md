@@ -4,6 +4,7 @@ first day of trying to get a video effect like Cyriak, using Mask R-CNN and Open
 
 relied heavily on Michael Sobprepera's [blog post](http://michaelsobrepera.com/guides/openposeaws.html) and Docker containers for OpenPose. 
 
+build from [yesterday's work](https://github.com/burningion/daily-sketches/tree/master/016) extracting a human from input video with mask r-cnn.
 
 ![017](https://github.com/burningion/daily-sketches/raw/master/017/images/00290.jpg)
 
