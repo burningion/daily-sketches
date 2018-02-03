@@ -24,3 +24,4 @@ Daily Sketches in Python
 [019](https://github.com/burningion/daily-sketches/tree/master/019)
 [020](https://github.com/burningion/daily-sketches/tree/master/020)
 [021](https://github.com/burningion/daily-sketches/tree/master/021)
+[022](https://github.com/burningion/daily-sketches/tree/master/022)
