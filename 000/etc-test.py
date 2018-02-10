@@ -50,7 +50,7 @@ running = True
 recording = False
 counter = -1
 
-if args.record >= 1:
+if args.record:
     recording = True
 
 if recording:
