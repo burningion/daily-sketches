@@ -4,7 +4,7 @@ sketch inspired by the [optical flow example](https://docs.opencv.org/3.3.1/d7/d
 
 mixing the optical flow of a pre-recorded shader with a stream from the webcam.
 
-![032](https://github.com/burningion/daily-sketches/raw/master/028/images/00396.jpg)
+![032](https://github.com/burningion/daily-sketches/raw/master/032/images/00396.jpg)
 
 ## sketch video generated with following commands
 
