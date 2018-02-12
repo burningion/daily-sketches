@@ -23,7 +23,6 @@ $ ffmpeg -f v4l2 -framerate 25 -video_size 1280x720 -i /dev/video0 webcam.mkv
 with that, the program can then be run.
 
 ```bash
-$
 $ mkdir imageseq
 $ python3 opt_flow.py
 $ cd imagesq
