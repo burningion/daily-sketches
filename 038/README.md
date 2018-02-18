@@ -13,6 +13,6 @@ i think it confused this implementation of mask rcnn a bit?
 ## sketch video generated with folowing commands
 
 ```bash
-$ python3 ben36.py 
-$ ffmpeg -r 30 -i %05d.jpg -i audio.mp3 -strict -2 day37.mp4
+$ python3 burnside.py 
+$ ffmpeg -r 30 -i %05d.jpg day39.mp4
 ```
