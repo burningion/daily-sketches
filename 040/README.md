@@ -6,11 +6,11 @@ this sketch takes a mask of the skateboards and people in the video, and enlarge
 
 the video is from the black bear bowl in booklyn circa 2015 (?). it no longer exists. :(
 
-![039](https://github.com/burningion/daily-sketches/raw/master/039/images/00075.jpg)
+![040](https://github.com/burningion/daily-sketches/raw/master/040/images/00075.jpg)
 
 ## sketch video generated with folowing commands
 
 ```bash
 $ python3 blackbear.py
-$ ffmpeg -r 30 -i %05d.jpg day41.mp4
+$ ffmpeg -r 24 -i %05d.jpg day41.mp4
 ```
