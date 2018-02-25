@@ -46,3 +46,4 @@ Daily Sketches in Python
 [041](https://github.com/burningion/daily-sketches/tree/master/041)
 [042](https://github.com/burningion/daily-sketches/tree/master/042)
 [043](https://github.com/burningion/daily-sketches/tree/master/043)
+[044](https://github.com/burningion/daily-sketches/tree/master/044)
