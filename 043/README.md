@@ -6,7 +6,7 @@ you'll need to download fast photo style first, build the docker image, and copy
 
 for waifu2x, you'll just need to download and install the docker file and then run the `batchWaifu2x.py`.
 
-![043](https://github.com/burningion/daily-sketches/raw/master/043/images/00184.jpg)
+![043](https://github.com/burningion/daily-sketches/raw/master/043/images/00184.png)
 
 ## sketch video generated with folowing commands
 
