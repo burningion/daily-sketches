@@ -2,7 +2,7 @@
 
 sketch using matterport's [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project. you'll need to have it installed and run this project in that directory.
 
-![048](https://github.com/burningion/daily-sketches/raw/master/048/images/000120.jpg)
+![048](https://github.com/burningion/daily-sketches/raw/master/048/images/00120.jpg)
 
 ## sketch video generated with following commands
 
