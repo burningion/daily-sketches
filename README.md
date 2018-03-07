@@ -54,4 +54,4 @@ Daily Sketches in Python
 [049](https://github.com/burningion/daily-sketches/tree/master/049)
 [050](https://github.com/burningion/daily-sketches/tree/master/050)
 [051](https://github.com/burningion/daily-sketches/tree/master/051)
-[052](https://github.com/burningion/daily-sketches/tree/master/052
+[052](https://github.com/burningion/daily-sketches/tree/master/052)
