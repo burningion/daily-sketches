@@ -1,6 +1,6 @@
 # Daily Sketches
 
-Daily Sketches in Python
+(Mostly) Daily Sketches in Python
 
 [000](https://github.com/burningion/daily-sketches/tree/master/000)
 [001](https://github.com/burningion/daily-sketches/tree/master/001)
@@ -55,3 +55,4 @@ Daily Sketches in Python
 [050](https://github.com/burningion/daily-sketches/tree/master/050)
 [051](https://github.com/burningion/daily-sketches/tree/master/051)
 [052](https://github.com/burningion/daily-sketches/tree/master/052)
+[053](https://github.com/burningion/daily-sketches/tree/master/053)
