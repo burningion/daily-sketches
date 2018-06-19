@@ -2,7 +2,7 @@
 
 easing back into sketches with anti aliased lines courtesy of scikit-image.
 
-![056](https://github.com/burningion/daily-sketches/raw/master/056/image/00000.jpg)
+![056](https://github.com/burningion/daily-sketches/raw/master/056/image/00245.png)
 
 ## sketch video generated with following commands
 
