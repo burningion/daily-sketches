@@ -60,3 +60,4 @@
 [055](https://github.com/burningion/daily-sketches/tree/master/055)
 [056](https://github.com/burningion/daily-sketches/tree/master/056)
 [057](https://github.com/burningion/daily-sketches/tree/master/057)
+[058](https://github.com/burningion/daily-sketches/tree/master/058)
